@@ -20,12 +20,11 @@ class SuraRecyclerAdapter(private val chapterList: List<String>): RecyclerView.A
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val title = chapterList[position]
         holder.bind(title)
-        if (onItemClickListner!= null)
-        {
+        onItemClickListner?.let { listner->
             holder.itemBinding.suraTittle.setOnClickListener {
-                onItemClickListner!!.onItemClick(title, position)
-            }
-        }
+           listner.onItemClick(title, position)
+        }  }
+
     }
     var onItemClickListner:OnItemClickListner?=null
    fun interface OnItemClickListner{

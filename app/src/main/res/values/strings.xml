@@ -10,4 +10,6 @@
     <string name="ahadeth">احاديث</string>
     <string name="number_tasbehat">عدد التسبيحات</string>
     <string name="azkar">سبحان الله</string>
+    <string name="suratitle">SuraTitle</string>
+    <string name="surapostion">SuraPostion</string>
 </resources>

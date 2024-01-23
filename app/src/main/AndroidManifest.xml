@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Islamy"
         tools:targetApi="31">
         <activity
+            android:name=".islamy.ui.suradetails.SuraDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".islamy.ui.MainActivity"
             android:exported="true">
             <intent-filter>
