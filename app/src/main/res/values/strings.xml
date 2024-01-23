@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Islamy</string>
+    <string name="title">اسلامي</string>
+    <string name="quran">القران</string>
+    <string name="hadeth">احاديث</string>
+    <string name="sebha">سبحة</string>
+    <string name="radio">راديو</string>
+    <string name="ayat_number">عدد الايات</string>
+    <string name="sura_name">اسم السورة</string>
+    <string name="ahadeth">احاديث</string>
+    <string name="number_tasbehat">عدد التسبيحات</string>
+    <string name="azkar">سبحان الله</string>
+</resources>
