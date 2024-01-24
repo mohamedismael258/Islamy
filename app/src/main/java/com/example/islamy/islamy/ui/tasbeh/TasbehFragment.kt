@@ -58,7 +58,7 @@ class TasbehFragment: Fragment() {
     private fun rotate()
     {
         val aniRotate: Animation =
-            AnimationUtils.loadAnimation(context,R.anim.fade_out)
+            AnimationUtils.loadAnimation(context,R.anim.fade_out)   /// try to make rotate animation  but it doesnt work !!!
         binding.bodyOfSeb.startAnimation(aniRotate)
     }
 
