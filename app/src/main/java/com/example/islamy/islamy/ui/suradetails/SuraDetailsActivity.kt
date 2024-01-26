@@ -13,6 +13,7 @@ class SuraDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivitySuraDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
         suraPostion=intent.getIntExtra(Constant.Surapostion,0)
         suraTitle=intent.getStringExtra(Constant.SuraTitle)?:""
         initView()
@@ -34,6 +35,13 @@ class SuraDetailsActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.titleTv.text=suraTitle
+        title = null
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return super.onSupportNavigateUp()
     }
 }

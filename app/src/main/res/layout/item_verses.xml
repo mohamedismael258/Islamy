@@ -5,7 +5,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
-<TextView
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:cardElevation="12sp"
+        app:contentPadding="10sp"
+        app:cardCornerRadius="12sp"
+   app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    <TextView
     android:id="@+id/sura_conten"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +26,9 @@
     app:layout_constraintEnd_toEndOf="parent"
     android:textSize="18sp"
     android:gravity="center"
+    android:padding="10sp"
     />
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

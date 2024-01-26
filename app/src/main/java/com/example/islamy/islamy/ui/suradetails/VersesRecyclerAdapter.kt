@@ -19,18 +19,14 @@ class VersesRecyclerAdapter(private val verses: List<String>): RecyclerView.Adap
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val title = verses[position]
-        holder.bind(title)
-
-    }
-    var onItemClickListner:OnItemClickListner?=null
-   fun interface OnItemClickListner{
-        fun onItemClick(item:String ,postion:Int)
+        holder.bind(title,position)
 
     }
     class ViewHolder(val itemBinding: ItemVersesBinding): RecyclerView.ViewHolder(itemBinding.root) {
-      fun bind(sura:String)
+      fun bind(sura:String,postion:Int)
       {
           itemBinding.suraConten.setText(sura)
+          itemBinding.suraConten.append((postion+1).toString())
       }
     }
 }
