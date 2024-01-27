@@ -1,6 +1,5 @@
 package com.example.islamy.islamy.ui.tasbeh
 
-import android.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +7,7 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
+import com.example.islamy.R
 import com.example.islamy.databinding.FragmentTasbehBinding
 
 
@@ -58,7 +58,7 @@ class TasbehFragment: Fragment() {
     private fun rotate()
     {
         val aniRotate: Animation =
-            AnimationUtils.loadAnimation(context,R.anim.fade_out)   /// try to make rotate animation  but it doesnt work !!!
+            AnimationUtils.loadAnimation(context, R.anim.rotate)
         binding.bodyOfSeb.startAnimation(aniRotate)
     }
 
